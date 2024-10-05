@@ -1,0 +1,9 @@
+Here are some publicly available PII datasets that you can consider for content moderation and privacy-related tasks. I've compiled the information based on datasets available on Kaggle and other sources:
+
+| **Dataset Name** | **License** | **Dataset Purpose** | **Number of Samples** | **Number of Classes** | **Dataset Format** | **Language** | **Data Type** | **Average Number of Words** | **Link** | **Sample** | **Used or Not** |
+|------------------|-------------|---------------------|-----------------------|-----------------------|-------------------|--------------|---------------|----------------------------|----------|------------|----------------|
+| **PII External Dataset** | CC BY-NC-SA 4.0 | Privacy Benchmarking | Not provided | Not provided | CSV | English | Text, Names, Emails, SSN, etc. | Not provided | [PII External Dataset](https://www.kaggle.com/datasets/alejopaullier/pii-external-dataset) | Includes various forms of PII data | Not Used |
+| **CISI (Information Retrieval Dataset)** | CC BY 4.0 | Information Retrieval | 1460 documents | Not provided | CSV, JSON | English | Text | Not provided | [CISI Dataset](https://www.kaggle.com/datasets/dmaso01dsta/cisi-a-dataset-for-information-retrieval) | Text with sensitive information for retrieval tasks | Not Used |
+| **Another PII Dataset** | ODC-BY | PII Detection/Benchmarking | 50,000 samples | 5 categories | JSON | Multilingual | Text, User Data | Not provided | [Kaggle PII Dataset](https://www.kaggle.com/docs/datasets) | Various forms of personal data | Not Used |
+
+This table lists datasets suitable for PII detection and related tasks. You can explore these datasets for content moderation or machine learning applications that require handling personal information. Each dataset has specific attributes, including license types and data formats, making them ideal for different benchmarking or training purposes.
