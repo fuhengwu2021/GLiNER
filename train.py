@@ -33,8 +33,8 @@ if __name__ == '__main__':
 
     print('Dataset size:', len(data))
     #shuffle
-    random.shuffle(data)    
-    print('Dataset is shuffled...')
+    #random.shuffle(data)
+    #print('Dataset is shuffled...')
 
     train_data = data[:int(len(data)*0.9)]
     test_data = data[int(len(data)*0.9):]

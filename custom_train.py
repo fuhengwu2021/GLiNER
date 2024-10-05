@@ -320,15 +320,15 @@ class Trainer:
     def run(self):
         with open(self.config.train_data, 'r') as f:
             data = json.load(f)
-        random.shuffle(data) 
+        d = data[0]
+
+        #random.shuffle(data)
         if torch.cuda.device_count() > 1 and self.allow_distributed:
             world_size = torch.cuda.device_count()
             mp.spawn(self.train_dist, args=(world_size, data), nprocs=world_size, join=True)
         else:
             model, optimizer = self.setup_model_and_optimizer()
-
             train_loader = self.create_dataloader(data, model.data_processor, shuffle=True)
-
             self.train(model, optimizer, train_loader, num_steps=self.config.num_steps, device=self.device)
 
 
