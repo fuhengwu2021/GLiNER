@@ -6,6 +6,7 @@ from gliner.training import Trainer, TrainingArguments
 from gliner.data_processing.collator import DataCollator
 import hiq
 import wandb  # Import wandb
+# wget https://huggingface.co/datasets/urchade/synthetic-pii-ner-mistral-v1/resolve/main/data.json
 
 # Initialize W&B
 wandb.init(project="gliner_ner_project", name="gliner_finetuning")  # You can set project name and experiment name
